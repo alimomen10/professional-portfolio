@@ -106,9 +106,11 @@ p {
 
 .hero-text {
   position: absolute;
+  color: orangered;
   bottom: 0px;
   left: 8px;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px gray;
 }
 
 /* END OF HERO SECTION */
@@ -124,48 +126,165 @@ p {
   margin-left: 10px;
   margin-bottom: 10px;
   padding-right: 50px;
-  border-right: 1px solid gold;
-  font-size: 2rem;
+  border-right: 2px solid orangered;
+  font-size: 1.75rem;
+  align-items: center;
 }
 
 .about-description {
   display: flex;
+  height: 150px;
   margin-left: 20px;
   margin-right: 20px;
   align-items: center;
 }
+
+/* END OF ABOUT ME */
 
 /* WORK SECTION */
 
 .work {
   display: flex;
   margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 .work-header {
+  display: flex;
   margin-left: 10px;
   margin-bottom: 10px;
   padding-right: 65px;
-  border-right: 1px solid gold;
-  font-size: 2rem;
+  border-right: 2px solid orangered;
+  font-size: 1.75rem;
+  align-items: center;
 }
 
-.work-gallery {
-  display: grid;
-  grid-gap: 10px;
+/* IMAGES FOR WORK */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-1 {
+  display: flex;
+  margin-bottom: 2px;
+  position: relative;
+  border-radius: 15px;
   margin-left: 20px;
-  margin-right: 20px;
-}
-
-.work-gallery img {
   object-fit: cover;
-  width: 100%;
-  border-radius: 5px;
+  align-items: center;
 }
 
-.work-gallery img:nth-of-type(3) {
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
+.img-basic {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  right: -13px;
+  object-fit: cover;
+}
+.img-basic img {
+  display: flex;
+  border-radius: 15px;
+  height: 300px;
+  width: 400px;
+  margin-left: 5px;
+  object-fit: cover;
+}
+/* .image-2 {
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 400px;
+  right: 5rem;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.image-3 {
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 400px;
+  right: 5rem;
+  border-radius: 15px;
+  margin-left: 20px;
+} */
+
+/* END OF WORK SECTION */
+
+.contact-me {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.contact-header {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-right: 22px;
+  border-right: 2px solid orangered;
+  font-size: 1.75rem;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-type {
+  display: flex;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.contact-me a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-me a:link {
+  color: #222;
+  text-decoration: none;
+}
+
+.contact-me a:visited {
+  color: ;
+  text-decoration: none;
+}
+
+.contact-me a:hover {
+  color: orangered;
+  text-decoration: none;
+}
+
+.navbar a:active {
+  color: orangered;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .image-1 {
+    height: 300px;
+    width: 400px;
+  }
+  
+  .img-basic {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    right: -13px;
+    object-fit: cover;
+  }
+  .img-basic img {
+    display: flex;
+    border-radius: 15px;
+    height: 150px;
+    width: 200px;
+    margin-left: 5px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 650px) {
@@ -198,7 +317,31 @@ p {
     align-items: center;
   }
 
+  .hero-text {
+    font-size: 2rem;
+  }
   .active {
     display: block;
+  }
+
+  .about-header {
+    font-size: 1rem;
+  }
+
+  .about-description {
+    font-size: 0.75rem;
+  }
+  .work-header {
+    font-size: 1rem;
+    padding-right: 58px;
+  }
+
+  .contact-header {
+    font-size: 1rem;
+    padding-right: 33px;
+  }
+
+  .contact-type {
+    font-size: 0.75rem;
   }
 }
