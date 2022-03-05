@@ -133,6 +133,7 @@ p {
 
 .about-description {
   display: flex;
+  font-size: 1.2rem;
   height: 150px;
   margin-left: 20px;
   margin-right: 20px;
@@ -146,7 +147,6 @@ p {
 .work {
   display: flex;
   margin-top: 25px;
-  flex-wrap: wrap;
 }
 
 .work-header {
@@ -161,57 +161,38 @@ p {
 
 /* IMAGES FOR WORK */
 
-.gallery {
+.work {
   display: flex;
-  flex-direction: column;
 }
 
-.image-1 {
+.work-images {
   display: flex;
-  margin-bottom: 2px;
-  position: relative;
-  border-radius: 15px;
   margin-left: 20px;
-  object-fit: cover;
-  align-items: center;
+  margin-right: 20px;
 }
 
-.img-basic {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  right: -13px;
-  object-fit: cover;
-}
-.img-basic img {
-  display: flex;
+.main-app img {
+  width: 100%;
+  height: auto;
   border-radius: 15px;
-  height: 300px;
-  width: 400px;
+}
+
+.secondary-app {
   margin-left: 5px;
-  object-fit: cover;
 }
-/* .image-2 {
+
+.secondary-app img {
   display: flex;
-  position: relative;
-  height: 300px;
-  width: 400px;
-  right: 5rem;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
-  margin-left: 20px;
 }
 
 .image-3 {
-  display: flex;
-  position: relative;
-  height: 300px;
-  width: 400px;
-  right: 5rem;
-  border-radius: 15px;
-  margin-left: 20px;
-} */
+  padding-top: 10px;
+}
 
-/* END OF WORK SECTION */
+/* CONTACT SECTION */
 
 .contact-me {
   display: flex;
@@ -260,32 +241,12 @@ p {
   text-decoration: none;
 }
 
-.navbar a:active {
+.contact-me a:active {
   color: orangered;
   text-decoration: none;
 }
 
-@media screen and (max-width: 1000px) {
-  .image-1 {
-    height: 300px;
-    width: 400px;
-  }
-  
-  .img-basic {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    right: -13px;
-    object-fit: cover;
-  }
-  .img-basic img {
-    display: flex;
-    border-radius: 15px;
-    height: 150px;
-    width: 200px;
-    margin-left: 5px;
-    object-fit: cover;
-}
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 650px) {
   .navbar {
