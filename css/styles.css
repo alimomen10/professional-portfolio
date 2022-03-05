@@ -121,19 +121,53 @@ p {
 }
 
 .about-header {
+  margin-left: 10px;
+  margin-bottom: 10px;
   padding-right: 50px;
   border-right: 1px solid gold;
+  font-size: 2rem;
 }
 
 .about-description {
-  margin-left: 13px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
 }
 
-.main-head {
-  width: 10rem;
-  height: 5rem;
-  border: 2px solid gold;
+/* WORK SECTION */
+
+.work {
+  display: flex;
+  margin-top: 25px;
 }
+
+.work-header {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-right: 65px;
+  border-right: 1px solid gold;
+  font-size: 2rem;
+}
+
+.work-gallery {
+  display: grid;
+  grid-gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.work-gallery img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.work-gallery img:nth-of-type(3) {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+
 @media screen and (max-width: 650px) {
   .navbar {
     flex-direction: column;
