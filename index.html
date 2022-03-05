@@ -3,50 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Ali Momen</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div>
+        <img
+          class="logo"
+          src="./assets/images/logo.PNG"
+          alt="Ali Momen - logo"
+        />
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a href="#">About Me</a></li>
+        <li class="list-item"><a href="#">Work</a></li>
+        <li class="list-item"><a href="#">Contact Me</a></li>
+        <li class="list-item"><a href="#">Resume</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
 
-  <!-- HEADER AND NAVIGATION -->
-      <header>
-          <h1>Ali Momen</h1>
-      <nav>
-            <ul>
-              <li>
-                <a href="#about-me">About Me</a>
-              </li>
-              <li>
-                <a href="#my-work">Work</a>
-              </li>
-              <li>
-                <a href="#contact-me">Contact Me</a>
-              </li>
-              <li>
-                <a href="#my-resume">Resume</a>
-              </li> 
-            </ul>      
-      </nav>
-    </header>
+    <div class="hero">
+      <h1 class="hero-text">Creative Coding</h1>
+    </div>
 
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <div class="hero-cta">
-        <h2>Creative coding till the end of time</h2>
-        </div>
-      </section>
+    <section class="about-me">
+      <div class="about-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-description">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          veniam ipsa commodi repellendus velit at nobis eligendi similique
+          aliquam officia, quaerat fugiat, dolorum tempora dicta, aut quas fugit
+          repudiandae beatae placeat molestias quisquam! Sint eum tempore
+          doloribus, sapiente, cumque reprehenderit inventore quae aperiam,
+          incidunt corrupti ducimus natus animi in dolores.
+        </p>
+      </div>
+    </section>
 
-      <!-- ABOUT ME -->
-      <section class="about-me">
-          <h1>About Me</h1>
-        <p>Ali Momen is an accomplished actor, artist, activist and professional web developer.</p>
-      </section>
-
-      <!-- MY WORK -->
-      <section class="work">
-      </section>
-
-      <!-- CONTACT ME -->
-      <section class="contact-me">
-      </section>
+    <div class="footer"></div>
+    <p></p>
   </body>
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList = document.getElementById("navi-list");
+
+    toggleButton.addEventListener("click", () => {
+      naviList.classList.toggle("active");
+    });
+  </script>
+</html>
